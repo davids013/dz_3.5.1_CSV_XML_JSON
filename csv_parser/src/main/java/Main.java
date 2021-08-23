@@ -9,19 +9,17 @@ import java.io.*;
 import java.util.List;
 
 public class Main {
-    private static final String SEP = File.separator;
     public static void main(String[] args) {
-        System.out.println("\tДомашнее задание к занятию 1.5: Работа с файлами CSV, XML, JSON\n" +
+        System.out.println("\n\tДомашнее задание к занятию 1.5: Работа с файлами CSV, XML, JSON\n" +
                 "\tЗадача 1: CSV - JSON парсер\n");
 
         String[] columnMapping = {"id", "firstName", "lastName", "country", "age"};
-        String fileName = "src" + SEP + "main" + SEP + "resources" + SEP + "data.csv";
-        String ouputFileName = "output.dat";
-        List<Employee> employees = parseCSV(columnMapping, fileName);
-        employees.forEach(System.out::println);
+        String csvFileName = "data.csv";
+        String csvOuputFileName = "csvOutput.dat";
+        List<Employee> employees = parseCSV(columnMapping, csvFileName);
+//        employees.forEach(System.out::println);
         String json = listToJson(employees);
-        System.out.println(json);
-        writeString(json, ouputFileName);
+        writeString(json, csvOuputFileName);
     }
 
     private static List<Employee> parseCSV(String[] fields, String fileName) {
@@ -34,6 +32,7 @@ public class Main {
                     .withMappingStrategy(strategy)
                     .build();
             employees = csv.parse();
+            System.out.println("\t>Список сотрудников получен из файла " + fileName);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -47,6 +46,7 @@ public class Main {
         for (String s : tempArray) {
             json += s + ",\r\n";
         }
+        System.out.println("\t>Список сотрудников переведен в строку JSON");
         return json;
     }
 
@@ -56,6 +56,7 @@ public class Main {
             writer.write(s);
             writer.flush();
             isWrited = true;
+            System.out.println("\t>Данные записаны в файл " + filePath);
         } catch (IOException e) {
             e.printStackTrace();
         }
