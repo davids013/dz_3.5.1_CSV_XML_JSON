@@ -61,7 +61,7 @@ public class Employee {
 ```
 
 ## Реализация
-Первым делом в классе `Main` в методе `main()` создайте массив строчек `columnMapping`, содержащий информацию о предназначении колонок в CVS файле:
+Первым делом в классе `CsvParser` в методе `main()` создайте массив строчек `columnMapping`, содержащий информацию о предназначении колонок в CVS файле:
 ```java
 String[] columnMapping = {"id", "firstName", "lastName", "country", "age"};
 ```

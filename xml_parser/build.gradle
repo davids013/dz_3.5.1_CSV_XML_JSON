@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.netology'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+configurations {
+    jar.archiveName = "XML-JSON_parser-" + version + ".jar"
+}

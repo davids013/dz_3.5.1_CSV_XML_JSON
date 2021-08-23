@@ -8,14 +8,14 @@ import com.opencsv.bean.CsvToBeanBuilder;
 import java.io.*;
 import java.util.List;
 
-public class Main {
-    public static void main(String[] args) {
+public class CsvParser {
+    public static void main() {
         System.out.println("\n\tДомашнее задание к занятию 1.5: Работа с файлами CSV, XML, JSON\n" +
                 "\tЗадача 1: CSV - JSON парсер\n");
 
         String[] columnMapping = {"id", "firstName", "lastName", "country", "age"};
         String csvFileName = "data.csv";
-        String csvOuputFileName = "csvOutput.dat";
+        String csvOuputFileName = "outputCSV.dat";
         List<Employee> employees = parseCSV(columnMapping, csvFileName);
 //        employees.forEach(System.out::println);
         String json = listToJson(employees);
