@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/csv_parser" />
             <option value="$PROJECT_DIR$/employee" />
+            <option value="$PROJECT_DIR$/json_parser" />
             <option value="$PROJECT_DIR$/xml_parser" />
           </set>
         </option>

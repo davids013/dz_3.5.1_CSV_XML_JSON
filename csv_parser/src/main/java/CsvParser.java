@@ -1,5 +1,3 @@
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.opencsv.CSVReader;
 import com.opencsv.bean.ColumnPositionMappingStrategy;
 import com.opencsv.bean.CsvToBean;
@@ -10,9 +8,9 @@ import java.util.List;
 
 public class CsvParser {
     public static void main() {
-        System.out.println("\n\tДомашнее задание к занятию 1.5: Работа с файлами CSV, XML, JSON\n" +
-                "\tЗадача 1: CSV - JSON парсер\n");
-
+        System.out.println("________________________________________________\n" +
+                "\t\tДомашнее задание к занятию 1.5: Работа с файлами CSV, XML, JSON\n" +
+                "\t\tЗадача 1: CSV - JSON парсер");
         String[] columnMapping = {"id", "firstName", "lastName", "country", "age"};
         String csvFileName = "data.csv";
         String csvOuputFileName = "outputCSV.json";

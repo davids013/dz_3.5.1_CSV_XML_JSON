@@ -11,9 +11,9 @@ import java.util.List;
 
 public class XmlParser {
     public static void main() {
-        System.out.println("\n\tДомашнее задание к занятию 1.5: Работа с файлами CSV, XML, JSON\n" +
-                "\tЗадача 2: XML - JSON парсер\n");
-
+        System.out.println("________________________________________________\n" +
+                "\t\tДомашнее задание к занятию 1.5: Работа с файлами CSV, XML, JSON\n" +
+                "\t\tЗадача 2: XML - JSON парсер");
         String fileName = "data.xml";
         List<Employee> list = parseXML(fileName);
         String json = Methods.listToJson(list);

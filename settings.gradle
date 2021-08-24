@@ -5,4 +5,5 @@ include 'csv_parser'
 include 'xml_parser'
 include 'employee'
 include 'core'
+include 'json_parser'
 

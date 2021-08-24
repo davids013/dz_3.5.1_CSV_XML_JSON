@@ -10,10 +10,11 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.opencsv:opencsv:5.5'
     implementation project(":core")
+    implementation 'com.google.code.gson:gson:2.8.7'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
 }
 
 configurations {
-    jar.archiveName = "CSV-JSON_parser-" + version + ".jar"
+    jar.archiveName = "JSON_parser-" + version + ".jar"
 }
