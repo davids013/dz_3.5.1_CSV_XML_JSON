@@ -4,4 +4,5 @@ rootProject.name = 'dz_3.5.1_CSV_XML_JSON'
 include 'csv_parser'
 include 'xml_parser'
 include 'employee'
+include 'core'
 

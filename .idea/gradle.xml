@@ -9,6 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/csv_parser" />
             <option value="$PROJECT_DIR$/employee" />
             <option value="$PROJECT_DIR$/xml_parser" />

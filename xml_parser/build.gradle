@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    implementation project(":employee")
+    implementation project(":core")
 }
 
 configurations {
